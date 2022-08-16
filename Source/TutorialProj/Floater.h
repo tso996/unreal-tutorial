@@ -14,6 +14,9 @@ class TUTORIALPROJ_API AFloater : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AFloater();
+    
+    UPROPERTY(VisibleAnywhere, Category = "ActorMeshComponents")
+    UStaticMeshComponent* StaticMesh;
 
 protected:
 	// Called when the game starts or when spawned
