@@ -9,5 +9,5 @@ UMyObject::UMyObject(){
 }
 
 void UMyObject::myFunction(){
-    
+    UE_LOG(LogTemp, Warning, TEXT("This is a message from the cpp file"));
 }
