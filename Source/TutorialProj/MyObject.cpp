@@ -5,6 +5,7 @@
 
 UMyObject::UMyObject(){
     myFloat = 0;
+    myReadOnlyFloat = 5;
 }
 
 void UMyObject::myFunction(){

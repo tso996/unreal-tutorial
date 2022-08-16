@@ -17,10 +17,13 @@ class TUTORIALPROJ_API UMyObject : public UObject
 public:
     UMyObject();
     
-    UPROPERTY(BlueprintReadWrite)
+    UPROPERTY(BlueprintReadWrite, Category = "myVariables")
     float myFloat{};
     
-    UFUNCTION(BlueprintCallable)
+    UPROPERTY(BlueprintReadOnly, Category = "myVariables")
+    float myReadOnlyFloat{};
+    
+    UFUNCTION(BlueprintCallable, Category = "myFunctions")
     void myFunction();
         
 	
